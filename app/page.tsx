@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className="image-box">
           <Image
-            src="/mahta.jpg"
+            src="/Mahta.jpg"
             alt="Mahta Ghahreman"
             width={900}
             height={600}
