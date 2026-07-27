@@ -10,7 +10,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
+    "typescript": "^6.0.0",
     "@types/react": "latest",
     "@types/node": "latest"
   }
