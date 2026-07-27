@@ -5,6 +5,7 @@ export default function Home() {
       <h2>Mahta Ghahreman</h2>
       <p>Official Website</p>
       <p>هر ترانه، تکه‌ای از یک زندگی...</p>
+      <p>© 2026 All Rights Reserved.</p>
     </main>
   );
 }
