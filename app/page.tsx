@@ -15,7 +15,6 @@ export default function Home() {
         </nav>
       </header>
 
-
       <section className="hero">
 
         <div className="image-box">
@@ -27,7 +26,6 @@ export default function Home() {
             priority
           />
         </div>
-
 
         <div className="intro">
           <h2>Mahta Ghahreman</h2>
@@ -43,28 +41,33 @@ export default function Home() {
 
       </section>
 
-
       <section className="music">
 
         <h2>🎵 آهنگ‌ها</h2>
 
         <div className="music-card">
-<Image
-  src="/Khatereh-cover.png"
-  alt="کاور آهنگ خاطره"
-  width={400}
-  height={400}
-/>
+
+          <Image
+            src="/Khatereh-cover.png"
+            alt="کاور آهنگ خاطره"
+            width={400}
+            height={400}
+          />
+
           <h3>خاطره</h3>
 
           <p>
-          <p>
-  ترانه: مهتا قهرمان
-</p>
+            ترانه: مهتا قهرمان
+          </p>
 
-<p>
-  موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
-</p>
+          <p>
+            موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
+          </p>
+
+          <audio controls>
+            <source
+              src="/Khatereh.mp3"
+              type="audio/mpeg"
             />
             مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
           </audio>
@@ -72,7 +75,6 @@ export default function Home() {
         </div>
 
       </section>
-
 
       <section className="poems">
 
@@ -85,7 +87,7 @@ export default function Home() {
             <h3>خاطره</h3>
 
             <p className="author">
-               ترانه‌سرا: مهتا قهرمان
+              ترانه‌سرا: مهتا قهرمان
             </p>
 
             <p>
@@ -110,7 +112,6 @@ export default function Home() {
         </div>
 
       </section>
-
 
       <footer>
         © 2026 Mahta Ghahreman
