@@ -98,6 +98,7 @@ export default function Home() {
       </section>
 
 
+
       <section className="poems">
 
         <h2>شعرها</h2>
@@ -117,59 +118,81 @@ export default function Home() {
             ریشه کرده خاطره در فکرِ من<br />
             برگ‌برگِ شاخه‌هایش ذکرِ من<br />
             من کنارِ واژه‌ای جا مانده‌ام<br />
-            دور از آن واژه، چه تنها مانده‌ام
+            دور از آن واژه، چه تنها مانده‌ام<br /><br />
+
+            من اسیرِ دستِ تقدیرم شدم<br />
+            پای‌بندِ قفلِ زنجیرم شدم<br /><br />
+
+            دردِ بی‌درمانِ من عشقِ تو بود<br />
+            آخرین سامانِ من عشقِ تو بود
           </p>
 
 
         </article>
 
-
       </section>
+
 
 
       <section className="contact">
 
-  <h2>ارتباط با ما</h2>
-
-  <div className="contact-box">
-
-    <div className="contact-icon">
-      📷
-    </div>
-
-    <div>
-      <h3>Instagram</h3>
-
-      <a href="https://instagram.com/mahtaghahreman">
-        https://instagram.com/mahtaghahreman
-      </a>
-    </div>
-
-  </div>
+        <h2>ارتباط با ما</h2>
 
 
-  <div className="contact-box">
+        <div className="contact-box">
 
-    <div className="contact-icon">
-      ▶️
-    </div>
+          <div className="contact-icon">
+            📷
+          </div>
 
-    <div>
-      <h3>YouTube</h3>
+          <div>
 
-      <a href="https://youtube.com/@mahta.ghahreman">
-        https://youtube.com/@mahta.ghahreman
-      </a>
-    </div>
+            <h3>Instagram</h3>
 
-  </div>
+            <a
+              href="https://instagram.com/mahtaghahreman"
+              target="_blank"
+            >
+              https://instagram.com/mahtaghahreman
+            </a>
 
-</section>
+          </div>
+
+        </div>
 
 
-<footer>
-  © 2026 Mahta Ghahreman
-</footer>
-</main>
+
+        <div className="contact-box">
+
+          <div className="contact-icon">
+            ▶️
+          </div>
+
+          <div>
+
+            <h3>YouTube</h3>
+
+            <a
+              href="https://youtube.com/@mahta.ghahreman"
+              target="_blank"
+            >
+              https://youtube.com/@mahta.ghahreman
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+
+      <footer>
+        © 2026 Mahta Ghahreman
+      </footer>
+
+
+    </main>
   );
 }
