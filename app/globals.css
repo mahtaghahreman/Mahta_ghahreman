@@ -302,3 +302,111 @@ nav{
 
 
 }
+/* ارتباط با ما */
+
+.contact{
+
+  margin-top:80px;
+  text-align:center;
+
+}
+
+
+.contact h2{
+
+  color:#d4af37;
+  font-size:34px;
+  margin-bottom:35px;
+
+}
+
+
+
+.contact-box{
+
+  max-width:520px;
+
+  margin:20px auto;
+
+  padding:25px;
+
+  background:#1b1b1b;
+
+  border-radius:25px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:25px;
+
+  text-align:left;
+
+  box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+
+
+.contact-icon{
+
+  font-size:45px;
+
+  min-width:60px;
+
+}
+
+
+
+.contact-box h3{
+
+  color:#fff;
+
+  font-size:22px;
+
+  margin-bottom:10px;
+
+}
+
+
+
+.contact-box a{
+
+  color:#ccc;
+
+  text-decoration:none;
+
+  font-size:15px;
+
+  word-break:break-all;
+
+}
+
+
+
+.contact-box a:hover{
+
+  color:#d4af37;
+
+}
+
+
+
+@media(max-width:768px){
+
+  .contact-box{
+
+    margin:15px 10px;
+
+    padding:20px;
+
+  }
+
+
+  .contact-icon{
+
+    font-size:38px;
+
+  }
+
+}
