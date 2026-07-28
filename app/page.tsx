@@ -49,7 +49,12 @@ export default function Home() {
         <h2>🎵 آهنگ‌ها</h2>
 
         <div className="music-card">
-
+<Image
+  src="/Khatereh-cover.png"
+  alt="کاور آهنگ خاطره"
+  width={400}
+  height={400}
+/>
           <h3>خاطره</h3>
 
           <p>
