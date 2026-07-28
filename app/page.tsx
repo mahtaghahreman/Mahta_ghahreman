@@ -170,3 +170,6 @@ export default function Home() {
 <footer>
   © 2026 Mahta Ghahreman
 </footer>
+</main>
+  );
+}
