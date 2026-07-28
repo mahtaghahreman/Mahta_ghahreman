@@ -51,83 +51,83 @@ export default function Home() {
 
       <section className="music">
 
-  <h2>🎵 آهنگ‌ها</h2>
+        <h2>🎵 آهنگ‌ها</h2>
 
 
-  <div className="music-list">
+        <div className="music-list">
 
 
-    <div className="music-card">
+          <div className="music-card">
 
 
-      <div className="cover-image">
+            <div className="cover-image">
 
-        <Image
-          src="/Khatereh-cover.png"
-          alt="کاور آهنگ خاطره"
-          fill
-          sizes="400px"
-        />
+              <Image
+                src="/Khatereh-cover.png"
+                alt="کاور آهنگ خاطره"
+                fill
+                sizes="400px"
+              />
 
-      </div>
-
-
-
-      <h3>خاطره</h3>
-
-
-      <p>
-        ترانه: مهتا قهرمان
-      </p>
-
-
-      <p>
-        موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
-      </p>
+            </div>
 
 
 
-      <audio controls>
-
-        <source
-          src="/Khatereh.mp3"
-          type="audio/mpeg"
-        />
-
-      </audio>
+            <h3>خاطره</h3>
 
 
-
-      <div className="song-text">
-
-        <h4>
-          متن ترانه
-        </h4>
+            <p>
+              ترانه: مهتا قهرمان
+            </p>
 
 
-        <p>
-          ریشه کرده خاطره در فکرِ من<br />
-          برگ‌برگِ شاخه‌هایش ذکرِ من<br />
-          من کنارِ واژه‌ای جا مانده‌ام<br />
-          دور از آن واژه، چه تنها مانده‌ام<br /><br />
-
-          من اسیرِ دستِ تقدیرم شدم<br />
-          پای‌بندِ قفلِ زنجیرم شدم<br /><br />
-
-          دردِ بی‌درمانِ من عشقِ تو بود<br />
-          آخرین سامانِ من عشقِ تو بود
-        </p>
-
-      </div>
+            <p>
+              موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
+            </p>
 
 
-    </div>
+
+            <audio controls>
+
+              <source
+                src="/Khatereh.mp3"
+                type="audio/mpeg"
+              />
+
+            </audio>
 
 
-  </div>
+
+            <div className="song-text">
+
+              <h4>
+                متن ترانه
+              </h4>
 
 
-</section>
+              <p>
+                ریشه کرده خاطره در فکرِ من<br />
+                برگ‌برگِ شاخه‌هایش ذکرِ من<br />
+                من کنارِ واژه‌ای جا مانده‌ام<br />
+                دور از آن واژه، چه تنها مانده‌ام<br /><br />
+
+                من اسیرِ دستِ تقدیرم شدم<br />
+                پای‌بندِ قفلِ زنجیرم شدم<br /><br />
+
+                دردِ بی‌درمانِ من عشقِ تو بود<br />
+                آخرین سامانِ من عشقِ تو بود
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </section>
+
 
 
 
@@ -166,6 +166,7 @@ export default function Home() {
 
 
 
+
       <section className="contact">
 
         <h2>ارتباط با ما</h2>
@@ -177,20 +178,25 @@ export default function Home() {
             📷
           </div>
 
+
           <div>
 
             <h3>Instagram</h3>
 
+
             <a
               href="https://instagram.com/mahtaghahreman"
               target="_blank"
+              rel="noopener noreferrer"
             >
               https://instagram.com/mahtaghahreman
             </a>
 
           </div>
 
+
         </div>
+
 
 
 
@@ -200,23 +206,28 @@ export default function Home() {
             ▶️
           </div>
 
+
           <div>
 
             <h3>YouTube</h3>
 
+
             <a
               href="https://youtube.com/@mahta.ghahreman"
               target="_blank"
+              rel="noopener noreferrer"
             >
               https://youtube.com/@mahta.ghahreman
             </a>
 
           </div>
 
+
         </div>
 
 
       </section>
+
 
 
 
