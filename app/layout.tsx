@@ -51,11 +51,22 @@ export default function RootLayout({
 
     <html lang="fa" dir="rtl">
 
+      <head>
+
+        <meta
+          name="google-site-verification"
+          content="VKWf8RZcqRNFJrW5k3gx-MLvRk4y7yI67sUtYmb31dI"
+        />
+
+      </head>
+
+
       <body>
 
         {children}
 
       </body>
+
 
     </html>
 
