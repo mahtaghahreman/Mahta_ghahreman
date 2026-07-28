@@ -127,11 +127,46 @@ export default function Home() {
       </section>
 
 
-      <footer>
-        © 2026 Mahta Ghahreman
-      </footer>
+      <section className="contact">
+
+  <h2>ارتباط با ما</h2>
+
+  <div className="contact-box">
+
+    <div className="contact-icon">
+      📷
+    </div>
+
+    <div>
+      <h3>Instagram</h3>
+
+      <a href="https://instagram.com/mahtaghahreman">
+        https://instagram.com/mahtaghahreman
+      </a>
+    </div>
+
+  </div>
 
 
-    </main>
-  );
-}
+  <div className="contact-box">
+
+    <div className="contact-icon">
+      ▶️
+    </div>
+
+    <div>
+      <h3>YouTube</h3>
+
+      <a href="https://youtube.com/@mahta.ghahreman">
+        https://youtube.com/@mahta.ghahreman
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 Mahta Ghahreman
+</footer>
