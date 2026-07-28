@@ -12,7 +12,6 @@ export default function Home() {
           <a href="#">درباره من</a>
           <a href="#">شعرها</a>
           <a href="#">آهنگ‌ها</a>
-          <a href="#">ارتباط</a>
         </nav>
       </header>
 
@@ -31,7 +30,6 @@ export default function Home() {
 
 
         <div className="intro">
-
           <h2>Mahta Ghahreman</h2>
 
           <p>
@@ -41,11 +39,9 @@ export default function Home() {
           <p>
             شعرهایی از عشق، دلتنگی، احساس و لحظه‌هایی که در دل آدم‌ها ماندگار می‌شوند.
           </p>
-
         </div>
 
       </section>
-
 
 
       <section className="music">
@@ -55,6 +51,10 @@ export default function Home() {
         <div className="music-card">
 
           <h3>خاطره</h3>
+
+          <p>
+            ترانه‌سرا: مهتا قهرمان
+          </p>
 
           <audio controls>
             <source
@@ -69,30 +69,30 @@ export default function Home() {
       </section>
 
 
-
       <section className="poems">
 
-        <h2>آخرین شعرها</h2>
+        <h2>شعرها</h2>
 
         <div className="cards">
-
 
           <article>
 
             <h3>خاطره</h3>
 
+            <p className="author">
+               ترانه‌سرا: مهتا قهرمان
+            </p>
+
             <p>
               ریشه کرده خاطره در فکرِ من<br />
               برگ‌برگِ شاخه‌هایش ذکرِ من<br />
               من کنارِ واژه‌ای جا مانده‌ام<br />
-              دور از آن واژه، چه تنها مانده‌ام<br />
-              <br />
+              دور از آن واژه، چه تنها مانده‌ام<br /><br />
 
               من اسیرِ دستِ تقدیرم شدم<br />
               پای‌بندِ قفلِ زنجیرم شدم<br />
               دردِ بی‌درمانِ من عشقِ تو بود<br />
-              آخرین سامانِ من عشقِ تو بود<br />
-              <br />
+              آخرین سامانِ من عشقِ تو بود<br /><br />
 
               واژه‌ای، با اشکِ من هم‌زاد شد<br />
               هر غزل، آیینهٔ فریاد شد<br />
@@ -102,33 +102,14 @@ export default function Home() {
 
           </article>
 
-
-
-          <article>
-
-            <h3>شعر دوم</h3>
-
-            <p>
-              به زودی...
-            </p>
-
-          </article>
-
-
         </div>
 
       </section>
 
 
-
       <footer>
-
-        <p>
-          © 2026 Mahta Ghahreman
-        </p>
-
+        © 2026 Mahta Ghahreman
       </footer>
-
 
     </main>
   );
