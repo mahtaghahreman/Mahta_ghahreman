@@ -51,51 +51,83 @@ export default function Home() {
 
       <section className="music">
 
-        <h2>🎵 آهنگ‌ها</h2>
+  <h2>🎵 آهنگ‌ها</h2>
 
 
-        <div className="music-card">
+  <div className="music-list">
 
 
-          <div className="cover-image">
-
-            <Image
-              src="/Khatereh-cover.png"
-              alt="کاور آهنگ خاطره"
-              fill
-              sizes="400px"
-            />
-
-          </div>
+    <div className="music-card">
 
 
+      <div className="cover-image">
 
-          <h3>خاطره</h3>
+        <Image
+          src="/Khatereh-cover.png"
+          alt="کاور آهنگ خاطره"
+          fill
+          sizes="400px"
+        />
 
-
-          <p>
-            ترانه: مهتا قهرمان
-          </p>
-
-
-          <p>
-            موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
-          </p>
+      </div>
 
 
-          <audio controls>
 
-            <source
-              src="/Khatereh.mp3"
-              type="audio/mpeg"
-            />
-
-          </audio>
+      <h3>خاطره</h3>
 
 
-        </div>
+      <p>
+        ترانه: مهتا قهرمان
+      </p>
 
-      </section>
+
+      <p>
+        موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
+      </p>
+
+
+
+      <audio controls>
+
+        <source
+          src="/Khatereh.mp3"
+          type="audio/mpeg"
+        />
+
+      </audio>
+
+
+
+      <div className="song-text">
+
+        <h4>
+          متن ترانه
+        </h4>
+
+
+        <p>
+          ریشه کرده خاطره در فکرِ من<br />
+          برگ‌برگِ شاخه‌هایش ذکرِ من<br />
+          من کنارِ واژه‌ای جا مانده‌ام<br />
+          دور از آن واژه، چه تنها مانده‌ام<br /><br />
+
+          من اسیرِ دستِ تقدیرم شدم<br />
+          پای‌بندِ قفلِ زنجیرم شدم<br /><br />
+
+          دردِ بی‌درمانِ من عشقِ تو بود<br />
+          آخرین سامانِ من عشقِ تو بود
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
 
 
 
