@@ -58,13 +58,13 @@ export default function Home() {
           <h3>خاطره</h3>
 
           <p>
-            ترانه‌سرا: مهتا قهرمان
-          </p>
+          <p>
+  ترانه: مهتا قهرمان
+</p>
 
-          <audio controls>
-            <source
-              src="/Khatereh.mp3"
-              type="audio/mpeg"
+<p>
+  موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
+</p>
             />
             مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
           </audio>
