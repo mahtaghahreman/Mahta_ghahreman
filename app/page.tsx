@@ -132,7 +132,7 @@ export default function Home() {
 
               <Image
                 src="/Bagh-roya-cover.png"
-                alt="کاور آهنگ باغ رویا"
+                alt="کاور آهنگ پنجره"
                 fill
                 sizes="400px"
               />
@@ -141,7 +141,7 @@ export default function Home() {
 
 
 
-            <h3>باغ رویا</h3>
+            <h3> پنجره</h3>
 
 
             <p>
@@ -158,7 +158,7 @@ export default function Home() {
             <audio controls>
 
               <source
-                src="/Bagh-roya.mp3"
+                src="/پنجره.mp3"
                 type="audio/mpeg"
               />
 
