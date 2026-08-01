@@ -19,7 +19,6 @@ export default function Home() {
       <section className="hero">
 
         <div className="hero-image">
-
           <Image
             src="/Mahta.jpg"
             alt="Mahta Ghahreman"
@@ -27,12 +26,10 @@ export default function Home() {
             priority
             sizes="(max-width:768px) 100vw, 1100px"
           />
-
         </div>
 
 
         <div className="intro">
-
           <h2>Mahta Ghahreman</h2>
 
           <p>
@@ -42,11 +39,9 @@ export default function Home() {
           <p>
             شعرهایی از عشق، دلتنگی، احساس و لحظه‌هایی که در دل آدم‌ها ماندگار می‌شوند.
           </p>
-
         </div>
 
       </section>
-
 
 
       <section className="music">
@@ -57,51 +52,30 @@ export default function Home() {
         <div className="music-list">
 
 
-          {/* خاطره */}
-
           <div className="music-card">
 
             <div className="cover-image">
-
               <Image
                 src="/Khatereh-cover.png"
                 alt="کاور آهنگ خاطره"
                 fill
-                sizes="400px"
               />
-
             </div>
 
 
             <h3>خاطره</h3>
 
-
-            <p>
-              ترانه‌سرا: مهتا قهرمان
-            </p>
-
-
-            <p>
-              موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
-            </p>
+            <p>ترانه‌سرا: مهتا قهرمان</p>
 
 
             <audio controls>
-
-              <source
-                src="/Khatereh.mp3"
-                type="audio/mpeg"
-              />
-
+              <source src="/Khatereh.mp3" type="audio/mpeg" />
             </audio>
 
 
             <div className="song-text">
 
-              <h4>
-                متن ترانه
-              </h4>
-
+              <h4>متن ترانه</h4>
 
               <p>
                 ریشه کرده خاطره در فکرِ من<br />
@@ -118,59 +92,34 @@ export default function Home() {
 
             </div>
 
-
           </div>
 
 
 
-
-
-          {/* پنجره */}
-
           <div className="music-card">
 
-
             <div className="cover-image">
-
               <Image
                 src="/Panjereh-cover.png"
                 alt="کاور آهنگ پنجره"
                 fill
-                sizes="400px"
               />
-
             </div>
 
 
             <h3>پنجره</h3>
 
-
-            <p>
-              ترانه‌سرا: مهتا قهرمان
-            </p>
-
-
-            <p>
-              موسیقی و اجرای صوتی: تولید شده با هوش مصنوعی
-            </p>
+            <p>ترانه‌سرا: مهتا قهرمان</p>
 
 
             <audio controls>
-
-              <source
-                src="/Panjereh.mp3"
-                type="audio/mpeg"
-              />
-
+              <source src="/Panjereh.mp3" type="audio/mpeg" />
             </audio>
 
 
             <div className="song-text">
 
-              <h4>
-                متن ترانه
-              </h4>
-
+              <h4>متن ترانه</h4>
 
               <p>
                 منو یک پنجره، در باغ رویا<br />
@@ -194,18 +143,15 @@ export default function Home() {
 
             </div>
 
-
           </div>
 
+
+        </div>
+
       </section>
-
-
-
-
-      <section className="poems">
+            <section className="poems">
 
         <h2>شعرها</h2>
-
 
 
         <article>
@@ -215,7 +161,6 @@ export default function Home() {
           <p className="author">
             ترانه‌سرا: مهتا قهرمان
           </p>
-
 
           <p>
             ریشه کرده خاطره در فکرِ من<br />
@@ -234,12 +179,9 @@ export default function Home() {
 
 
 
-
-
         <article>
 
           <h3>پنجره</h3>
-
 
           <p className="author">
             ترانه‌سرا: مهتا قهرمان
@@ -274,11 +216,9 @@ export default function Home() {
 
 
 
-
       <section className="contact">
 
         <h2>ارتباط با ما</h2>
-
 
 
         <div className="contact-box">
@@ -291,7 +231,6 @@ export default function Home() {
           <div>
 
             <h3>Instagram</h3>
-
 
             <a
               href="https://instagram.com/mahtaghahreman"
@@ -308,7 +247,6 @@ export default function Home() {
 
 
 
-
         <div className="contact-box">
 
           <div className="contact-icon">
@@ -319,7 +257,6 @@ export default function Home() {
           <div>
 
             <h3>YouTube</h3>
-
 
             <a
               href="https://youtube.com/@mahta.ghahreman"
