@@ -57,8 +57,9 @@ export default function Home() {
         <div className="music-list">
 
 
-          <div className="music-card">
+          {/* خاطره */}
 
+          <div className="music-card">
 
             <div className="cover-image">
 
@@ -70,7 +71,6 @@ export default function Home() {
               />
 
             </div>
-
 
 
             <h3>خاطره</h3>
@@ -86,7 +86,6 @@ export default function Home() {
             </p>
 
 
-
             <audio controls>
 
               <source
@@ -95,7 +94,6 @@ export default function Home() {
               />
 
             </audio>
-
 
 
             <div className="song-text">
@@ -125,13 +123,17 @@ export default function Home() {
 
 
 
+
+
+          {/* پنجره */}
+
           <div className="music-card">
 
 
             <div className="cover-image">
 
               <Image
-                src="/Bagh-roya-cover.png"
+                src="/Panjereh-cover.png"
                 alt="کاور آهنگ پنجره"
                 fill
                 sizes="400px"
@@ -140,8 +142,7 @@ export default function Home() {
             </div>
 
 
-
-            <h3> پنجره</h3>
+            <h3>پنجره</h3>
 
 
             <p>
@@ -154,16 +155,14 @@ export default function Home() {
             </p>
 
 
-
             <audio controls>
 
               <source
-                src="/پنجره.mp3"
+                src="/Panjereh.mp3"
                 type="audio/mpeg"
               />
 
             </audio>
-
 
 
             <div className="song-text">
@@ -190,20 +189,6 @@ export default function Home() {
                 نگاهی خیره و بی تاب<br />
                 منو حال پریشونم<br />
                 از این دنیاست<br />
-                که ویرونم<br /><br />
-
-                منو یک عشق بی فرجام<br />
-                هنوزم در پی یک نام<br />
-                منو یادی که رفت از یاد<br />
-                تمام دلخوشیم بر باد<br /><br />
-
-                منو یک نخ، منو یک پاکت سیگار<br />
-                فنا میشیم هر دو، به یاد اولین دیدار<br /><br />
-
-                منو یک کوچه دلتنگی<br />
-                اسیر فصل بی برگی<br />
-                منو حال پریشونم<br />
-                از این دنیاست<br />
                 که ویرونم
               </p>
 
@@ -211,10 +196,10 @@ export default function Home() {
 
 
           </div>
-          
-        </div>
+                  </div>
 
       </section>
+
 
 
 
@@ -251,9 +236,10 @@ export default function Home() {
 
 
 
+
         <article>
 
-          <h3> پنجره</h3>
+          <h3>پنجره</h3>
 
 
           <p className="author">
@@ -289,6 +275,7 @@ export default function Home() {
 
 
 
+
       <section className="contact">
 
         <h2>ارتباط با ما</h2>
@@ -318,6 +305,7 @@ export default function Home() {
           </div>
 
         </div>
+
 
 
 
