@@ -10,7 +10,6 @@ export default function Home() {
         <nav>
           <a href="#">خانه</a>
           <a href="#">درباره من</a>
-          <a href="#">شعرها</a>
           <a href="#">آهنگ‌ها</a>
         </nav>
       </header>
