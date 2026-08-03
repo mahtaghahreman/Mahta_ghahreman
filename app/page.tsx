@@ -29,14 +29,6 @@
 
     <div className="music-card">
 
-      <div className="cover-image">
-        <Image
-          src="/Panjereh-cover.png"
-          alt="کاور آهنگ پنجره"
-          fill
-        />
-      </div>
-
       <h3>پنجره</h3>
 
       <p>ترانه‌سرا: مهتا قهرمان</p>
@@ -50,14 +42,6 @@
 
 
     <div className="music-card">
-
-      <div className="cover-image">
-        <Image
-          src="/When-resid-cover.png"
-          alt="کاور آهنگ وقتی رسیدم"
-          fill
-        />
-      </div>
 
       <h3>وقتی رسیدم</h3>
 
