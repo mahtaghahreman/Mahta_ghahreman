@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function LyricsPage() {
   return (
@@ -5,13 +6,21 @@ export default function LyricsPage() {
 
       <h1>اشعار</h1>
 
-      <p>
-        مجموعه شعرها و ترانه‌های مهتا قهرمان
-      </p>
+      <div className="lyrics-list">
 
-      <a href="/lyrics/khatereh">
-        خاطره
-      </a>
+        <Link href="/lyrics/khatereh">
+          خاطره
+        </Link>
+
+        <Link href="/lyrics/panjereh">
+          پنجره
+        </Link>
+
+        <Link href="/lyrics/vaghti-residam">
+          وقتی رسیدم
+        </Link>
+
+      </div>
 
     </main>
   );
