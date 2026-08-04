@@ -11,6 +11,7 @@ export default function Home() {
           <a href="#">خانه</a>
           <a href="#">درباره من</a>
           <a href="#">آهنگ‌ها</a>
+          <a href="/lyrics">اشعار</a>
         </nav>
       </header>
 
