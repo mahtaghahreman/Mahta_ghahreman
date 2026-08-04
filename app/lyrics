@@ -4,7 +4,7 @@ export default function LyricsPage() {
   return (
     <main className="lyrics-page">
 
-      <h1>شعر ها</h1>
+      <h1>اشعار</h1>
 
       <div className="lyrics-list">
 
