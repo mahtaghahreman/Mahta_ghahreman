@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +26,110 @@ img {
   display: block;
 }
 
-main {
+
+/* صفحه اصلی */
+
+.home {
   width: 100%;
+  padding: 20px;
+}
+
+
+/* منو */
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* تصویر */
+
+.hero {
+  text-align: center;
+}
+
+.hero-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+/* متن */
+
+.intro {
+  max-width: 700px;
+  margin: 30px auto;
+  line-height: 2;
+}
+
+
+/* آهنگ‌ها */
+
+.music {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.music-card {
+  margin: 25px auto;
+}
+
+
+/* ارتباط */
+
+.contact {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+/* اشعار */
+
+.lyrics-page {
+  text-align: center;
+  padding: 30px;
+  line-height: 2;
+}
+
+.lyrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.lyrics-list a {
+  width: 220px;
+  padding: 15px;
+  background: #222;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.lyrics-text {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.lyrics-text p {
+  margin-bottom: 30px;
+}
+
+
+footer {
+  text-align: center;
+  margin: 50px 0 20px;
 }
