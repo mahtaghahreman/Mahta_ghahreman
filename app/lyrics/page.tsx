@@ -22,7 +22,7 @@ export default function LyricsPage() {
         </Link>
 
         <Link href="/lyrics/iran-farsi">
-          ایران فارسی
+         ایران  
         </Link>
 
         <Link href="/lyrics/kooche-gard">
