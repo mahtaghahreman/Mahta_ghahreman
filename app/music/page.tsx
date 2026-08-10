@@ -1,4 +1,4 @@
-```tsx
+
 export default function MusicPage() {
   return (
     <main className="lyrics-page">
@@ -75,4 +75,4 @@ export default function MusicPage() {
     </main>
   );
 }
-```
+
