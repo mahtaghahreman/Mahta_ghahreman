@@ -1,13 +1,10 @@
 
-```tsx
 export default function BikaranPage() {
   return (
     <main className="lyrics-page">
-
       <h1>بی کران</h1>
 
       <div className="lyrics-text">
-
         <p>
           بیا که خنده بزنیم و غم از جهان ببریم<br />
           ز جامِ عشق بنوشیم و حالِ زمانه بریم
@@ -38,11 +35,7 @@ export default function BikaranPage() {
         <p>
           ترانه‌سرا: مهتا قهرمان
         </p>
-
       </div>
-
     </main>
   );
 }
-```
-
