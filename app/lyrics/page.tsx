@@ -1,3 +1,4 @@
+```jsx
 import Link from "next/link";
 
 export default function LyricsPage() {
@@ -20,8 +21,21 @@ export default function LyricsPage() {
           وقتی رسیدم
         </Link>
 
+        <Link href="/lyrics/iran-farsi">
+          ایران فارسی
+        </Link>
+
+        <Link href="/lyrics/kooche-gard">
+          کوچه گرد
+        </Link>
+
+        <Link href="/lyrics/bikaran">
+          بی کران
+        </Link>
+
       </div>
 
     </main>
   );
 }
+```
