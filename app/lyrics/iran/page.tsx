@@ -1,4 +1,4 @@
-```tsx
+
 export default function IranLyricsPage() {
   return (
     <main className="lyrics-page">
@@ -53,4 +53,3 @@ export default function IranLyricsPage() {
     </main>
   );
 }
-```
