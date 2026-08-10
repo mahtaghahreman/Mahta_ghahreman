@@ -1,4 +1,4 @@
-```tsx
+
 export default function KoocheGardLyricsPage() {
   return (
     <main className="lyrics-page">
@@ -54,4 +54,4 @@ export default function KoocheGardLyricsPage() {
     </main>
   );
 }
-```
+
