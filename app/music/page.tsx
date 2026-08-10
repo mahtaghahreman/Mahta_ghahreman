@@ -51,7 +51,7 @@ export default function MusicPage() {
 
 
         <div className="music-card">
-          <h3>ایران فارسی</h3>
+          <h3>ایران </h3>
 
           <p>
             ترانه‌سرا: مهتا قهرمان
