@@ -1,12 +1,10 @@
 ```tsx
-export default function BikaranLyricsPage() {
+export default function Page() {
   return (
     <main className="lyrics-page">
-
       <h1>بی کران</h1>
 
       <div className="lyrics-text">
-
         <p>
           بیا که خنده بزنیم و غم از جهان ببریم<br />
           ز جامِ عشق بنوشیم و حالِ زمانه بریم
@@ -33,10 +31,9 @@ export default function BikaranLyricsPage() {
           نه فکرِ فردا و دیروز، حالِ ما خوش باد<br />
           که با تو می‌شود این لحظه را تا <strong>بی‌کران</strong> ببریم
         </p>
-
       </div>
-
     </main>
   );
 }
 ```
+
