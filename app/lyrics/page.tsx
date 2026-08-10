@@ -1,4 +1,4 @@
-```tsx
+
 import Link from "next/link";
 
 export default function LyricsPage() {
@@ -38,4 +38,4 @@ export default function LyricsPage() {
     </main>
   );
 }
-```
+
