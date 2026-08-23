@@ -117,7 +117,7 @@ export default function Home() {
                 href={song.lyricLink}
                 className="read-more"
               >
-                📖 خواندن متن کامل
+                📖  متن ترانه
               </Link>
             </article>
           ))}
