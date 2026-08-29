@@ -2,6 +2,61 @@ import Image from "next/image";
 import Link from "next/link";
 
 const songs = [
+  // =========================
+  // آثار قبلی
+  // =========================
+  {
+    title: "خاطره",
+    file: "/Khatereh.mp3",
+    lyric: "ریشه کرده خاطره در فکرِ من، برگ‌برگِ شاخه‌هایش ذکرِ من",
+    lyricLink: "/lyrics/khatereh",
+  },
+  {
+    title: "پنجره",
+    file: "/Panjereh.mp3",
+    lyric: "متن کوتاه شعر پنجره اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/panjereh",
+  },
+  {
+    title: "وقتی رسیدم",
+    file: "/When-resid.mp3",
+    lyric: "متن کوتاه شعر وقتی رسیدم اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/vaghti-residam",
+  },
+  {
+    title: "ایران",
+    file: "/Iran.mp3",
+    lyric: "متن کوتاه شعر ایران اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/iran",
+  },
+  {
+    title: "کوچه گرد",
+    file: "/KoocheGard.mp3",
+    lyric: "متن کوتاه شعر کوچه گرد اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/kooche-gard",
+  },
+  {
+    title: "بی کران",
+    file: "/Bikaran.mp3",
+    lyric: "متن کوتاه شعر بی کران اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/bikaran",
+  },
+  {
+    title: "جان و دل",
+    file: "/Jan-o-Del.mp3",
+    lyric: "متن کوتاه شعر جان و دل اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/jan-o-del",
+  },
+  {
+    title: "شکوه",
+    file: "/Shekveh.mp3",
+    lyric: "متن کوتاه شعر شکوه اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/shekveh",
+  },
+
+  // =========================
+  // آثار جدید
+  // =========================
   {
     title: "عشق ویرانگر",
     file: "/eshgh-virangar.mp3",
