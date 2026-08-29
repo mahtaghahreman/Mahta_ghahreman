@@ -153,7 +153,9 @@ nav a:hover {
   margin-top: 10px;
 }
 
-/* خواندن متن کامل */
+/* =========================
+   Lyrics Button
+========================= */
 
 .read-more {
   display: inline-block;
@@ -220,6 +222,44 @@ nav a:hover {
 }
 
 /* =========================
+   Lyrics Pages
+========================= */
+
+.lyrics-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  text-align: center;
+  direction: rtl;
+}
+
+.lyrics-page h1 {
+  color: #d4af37;
+  font-size: 42px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.lyrics-text {
+  background: linear-gradient(145deg, #181818, #121212);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  padding: 40px 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+.lyrics-text p {
+  color: #eee;
+  font-size: 21px;
+  line-height: 2.7;
+  margin-bottom: 38px;
+}
+
+.lyrics-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
    About
 ========================= */
 
@@ -243,37 +283,6 @@ nav a:hover {
   font-size: 18px;
   line-height: 2.3;
   margin-bottom: 15px;
-}
-
-/* =========================
-   Old Lyrics Pages
-========================= */
-
-.lyrics-page {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.lyrics-page h1 {
-  color: #d4af37;
-  font-size: 42px;
-  margin-bottom: 30px;
-}
-
-.lyrics-text {
-  background: #151515;
-  padding: 35px;
-  border-radius: 25px;
-  margin-top: 30px;
-}
-
-.lyrics-text p {
-  color: #eee;
-  font-size: 20px;
-  line-height: 2.5;
-  margin-bottom: 35px;
 }
 
 /* =========================
@@ -421,13 +430,25 @@ footer {
     font-size: 16px;
   }
 
+  .lyrics-page {
+    margin: 20px auto;
+    padding: 30px 10px;
+  }
+
+  .lyrics-page h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
   .lyrics-text {
-    padding: 25px 18px;
+    padding: 28px 18px;
+    border-radius: 20px;
   }
 
   .lyrics-text p {
     font-size: 18px;
-    line-height: 2.3;
+    line-height: 2.4;
+    margin-bottom: 30px;
   }
 
   .contact-box {
