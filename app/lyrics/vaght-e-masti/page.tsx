@@ -1,4 +1,4 @@
-export default function VaghtEMastiPage() {
+export default function VaghtEMapstiPage() {
   return (
     <main className="lyrics-page">
       <h1>وقت مستی</h1>
@@ -6,11 +6,11 @@ export default function VaghtEMastiPage() {
       <div className="lyrics-text">
         <p>
           پرم از دیوانگی<br />
-          خنده ها و گریه های الکی<br />
-          حال مستی
+          خنده ها و گریه های الکی
         </p>
 
         <p>
+          حال مستی<br />
           در کنار مطرب و ساقی خوش است<br />
           ورنه هرجا وقت تنهایی<br />
           شراب و شیره انگور هست
@@ -48,7 +48,10 @@ export default function VaghtEMastiPage() {
 
         <p>
           آنقدر مست و خرابم،<br />
-          نیست پای رفتنم<br />
+          نیست پای رفتنم
+        </p>
+
+        <p>
           تو همین جا<br />
           گوشه میخانه ات جایم بده
         </p>
