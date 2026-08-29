@@ -1,80 +1,58 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://mahta-ghahreman.vercel.app";
 
   return [
     {
-      url: `${baseUrl}/`,
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
     },
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: `${baseUrl}/music`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
     },
     {
-      url: `${baseUrl}/lyrics`,
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+    },
+
+    // اشعار
+    {
+      url: `${baseUrl}/lyrics/eshgh-virangar`,
+      lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/lyrics/khatereh`,
+      url: `${baseUrl}/lyrics/meykhaneh`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/panjereh`,
+      url: `${baseUrl}/lyrics/fasle-eshgh`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/vaghti-residam`,
+      url: `${baseUrl}/lyrics/baroon`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/iran`,
+      url: `${baseUrl}/lyrics/kash`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/kooche-gard`,
+      url: `${baseUrl}/lyrics/kaboos`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/bikaran`,
+      url: `${baseUrl}/lyrics/mast-mastam`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
-      url: `${baseUrl}/lyrics/jan-o-del`,
+      url: `${baseUrl}/lyrics/vaght-e-masti`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/lyrics/shekveh`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
   ];
 }
