@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://mahta-ghahreman.vercel.app"),
+const siteUrl = "https://mahta-ghahreman.vercel.app";
 
-  title: "مهتا قهرمان | شاعر و ترانه‌سرا",
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default: "مهتا قهرمان | شاعر و ترانه‌سرا",
+    template: "%s | مهتا قهرمان",
+  },
 
   description:
-    "وب‌سایت رسمی مهتا قهرمان، شامل شعرها، ترانه‌ها و آثار موسیقی.",
+    "وب‌سایت رسمی مهتا قهرمان، شاعر و ترانه‌سرا؛ مجموعه‌ای از شعرها، ترانه‌ها و آثار موسیقی.",
 
   keywords: [
     "مهتا قهرمان",
     "Mahta Ghahreman",
-    "شاعر",
-    "ترانه‌سرا",
+    "شاعر مهتا قهرمان",
+    "ترانه‌سرای مهتا قهرمان",
+    "شعر مهتا قهرمان",
+    "ترانه مهتا قهرمان",
+    "آهنگ مهتا قهرمان",
     "شعر",
     "ترانه",
-    "آهنگ",
     "موسیقی",
   ],
 
@@ -26,22 +33,28 @@ export const metadata: Metadata = {
     },
   ],
 
+  creator: "Mahta Ghahreman",
+
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
 
   openGraph: {
     title: "مهتا قهرمان | شاعر و ترانه‌سرا",
 
     description:
-      "مجموعه شعرها، ترانه‌ها و آثار موسیقی مهتا قهرمان.",
+      "وب‌سایت رسمی مهتا قهرمان؛ مجموعه شعرها، ترانه‌ها و آثار موسیقی.",
 
-    url: "https://mahta-ghahreman.vercel.app",
+    url: siteUrl,
 
     siteName: "Mahta Ghahreman",
 
