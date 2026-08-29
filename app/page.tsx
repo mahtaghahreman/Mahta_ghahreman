@@ -3,52 +3,52 @@ import Link from "next/link";
 
 const songs = [
   {
-    title: "خاطره",
-    file: "/Khatereh.mp3",
-    lyric: "ریشه کرده خاطره در فکرِ من، برگ‌برگِ شاخه‌هایش ذکرِ من",
-    lyricLink: "/lyrics/khatereh",
+    title: "عشق ویرانگر",
+    file: "/eshgh-virangar.mp3",
+    lyric: "هر دلی را روزگاری عشق ویران می‌کند",
+    lyricLink: "/lyrics/eshgh-virangar",
   },
   {
-    title: "پنجره",
-    file: "/Panjereh.mp3",
-    lyric: "متن کوتاه شعر پنجره اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/panjereh",
+    title: "میخانه",
+    file: "/meykhaneh.mp3",
+    lyric: "شب نشینم امشبم با دردوغم خواهد گذشت",
+    lyricLink: "/lyrics/meykhaneh",
   },
   {
-    title: "وقتی رسیدم",
-    file: "/When-resid.mp3",
-    lyric: "متن کوتاه شعر وقتی رسیدم اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/vaghti-residam",
+    title: "فصل عشق",
+    file: "/fasle-eshgh.mp3",
+    lyric: "آمد از پشتِ غبارِ خاطره",
+    lyricLink: "/lyrics/fasle-eshgh",
   },
   {
-    title: "ایران",
-    file: "/Iran.mp3",
-    lyric: "متن کوتاه شعر ایران اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/iran",
+    title: "بارون",
+    file: "/baroon.mp3",
+    lyric: "دیدن تو مِثه بارون",
+    lyricLink: "/lyrics/baroon",
   },
   {
-    title: "کوچه گرد",
-    file: "/KoocheGard.mp3",
-    lyric: "متن کوتاه شعر کوچه گرد اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/kooche-gard",
+    title: "کاش",
+    file: "/Kash.mp3",
+    lyric: "کاش همسفرِ راهم بودی",
+    lyricLink: "/lyrics/kash",
   },
   {
-    title: "بی کران",
-    file: "/Bikaran.mp3",
-    lyric: "متن کوتاه شعر بی کران اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/bikaran",
+    title: "کابوس",
+    file: "/kaboos.mp3",
+    lyric: "اگه کابوس این شبها تموم شه",
+    lyricLink: "/lyrics/kaboos",
   },
   {
-    title: "جان و دل",
-    file: "/Jan-o-Del.mp3",
-    lyric: "متن کوتاه شعر جان و دل اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/jan-o-del",
+    title: "مست مستم",
+    file: "/mast-mastam.mp3",
+    lyric: "مَستِ مَستَم، کن ساقیا پیمانه را لبریز کن",
+    lyricLink: "/lyrics/mast-mastam",
   },
   {
-    title: "شکوه",
-    file: "/Shekveh.mp3",
-    lyric: "متن کوتاه شعر شکوه اینجا قرار می‌گیرد...",
-    lyricLink: "/lyrics/shekveh",
+    title: "وقت مستی",
+    file: "",
+    lyric: "پرم از دیوانگی",
+    lyricLink: "/lyrics/vaght-e-masti",
   },
 ];
 
@@ -104,10 +104,14 @@ export default function Home() {
 
               <p className="lyric-preview">{song.lyric}</p>
 
-              <audio controls preload="none">
-                <source src={song.file} type="audio/mpeg" />
-                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
-              </audio>
+              {song.file ? (
+                <audio controls preload="none">
+                  <source src={song.file} type="audio/mpeg" />
+                  مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+                </audio>
+              ) : (
+                <p>فایل صوتی این اثر هنوز اضافه نشده است.</p>
+              )}
 
               <Link href={song.lyricLink} className="read-more">
                 📖 متن ترانه
@@ -121,9 +125,7 @@ export default function Home() {
       <section id="lyrics" className="lyrics-section">
         <h2>📝 اشعار</h2>
 
-        <p>
-          مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان
-        </p>
+        <p>مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان</p>
 
         <div className="lyrics-list">
           <Link href="/lyrics/eshgh-virangar">
