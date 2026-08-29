@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const songs = [
-  // =========================
-  // آثار قبلی
-  // =========================
   {
     title: "خاطره",
     file: "/Khatereh.mp3",
@@ -53,56 +50,10 @@ const songs = [
     lyric: "متن کوتاه شعر شکوه اینجا قرار می‌گیرد...",
     lyricLink: "/lyrics/shekveh",
   },
-
-  // =========================
-  // آثار جدید
-  // =========================
-  {
-    title: "عشق ویرانگر",
-    file: "/eshgh-virangar.mp3",
-    lyric: "هر دلی را روزگاری عشق ویران می‌کند",
-    lyricLink: "/lyrics/eshgh-virangar",
-  },
-  {
-    title: "میخانه",
-    file: "/meykhaneh.mp3",
-    lyric: "شب نشینم امشبم با دردوغم خواهد گذشت",
-    lyricLink: "/lyrics/meykhaneh",
-  },
-  {
-    title: "فصل عشق",
-    file: "/fasle-eshgh.mp3",
-    lyric: "آمد از پشتِ غبارِ خاطره",
-    lyricLink: "/lyrics/fasle-eshgh",
-  },
-  {
-    title: "بارون",
-    file: "/baroon.mp3",
-    lyric: "دیدن تو مِثه بارون",
-    lyricLink: "/lyrics/baroon",
-  },
-  {
-    title: "کاش",
-    file: "/Kash.mp3",
-    lyric: "کاش همسفرِ راهم بودی",
-    lyricLink: "/lyrics/kash",
-  },
-  {
-    title: "کابوس",
-    file: "/kaboos.mp3",
-    lyric: "اگه کابوس این شبها تموم شه",
-    lyricLink: "/lyrics/kaboos",
-  },
-  {
-    title: "مست مستم",
-    file: "/mast-mastam.mp3",
-    lyric: "مَستِ مَستَم، کن ساقیا پیمانه را لبریز کن",
-    lyricLink: "/lyrics/mast-mastam",
-  },
   {
     title: "وقت مستی",
-    file: "",
-    lyric: "پرم از دیوانگی",
+    file: "/vaght-e-masti.mp3",
+    lyric: "متن کوتاه شعر وقت مستی اینجا قرار می‌گیرد...",
     lyricLink: "/lyrics/vaght-e-masti",
   },
 ];
@@ -122,7 +73,6 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* معرفی */}
       <section id="home" className="hero">
         <div className="hero-image">
           <Image
@@ -148,7 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* آهنگ‌ها */}
       <section id="music" className="music-section">
         <h2>🎵 آهنگ‌ها</h2>
 
@@ -159,14 +108,10 @@ export default function Home() {
 
               <p className="lyric-preview">{song.lyric}</p>
 
-              {song.file ? (
-                <audio controls preload="none">
-                  <source src={song.file} type="audio/mpeg" />
-                  مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
-                </audio>
-              ) : (
-                <p>فایل صوتی این اثر هنوز اضافه نشده است.</p>
-              )}
+              <audio controls preload="none">
+                <source src={song.file} type="audio/mpeg" />
+                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+              </audio>
 
               <Link href={song.lyricLink} className="read-more">
                 📖 متن ترانه
@@ -176,11 +121,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* اشعار */}
       <section id="lyrics" className="lyrics-section">
         <h2>📝 اشعار</h2>
 
-        <p>مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان</p>
+        <p>
+          مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان
+        </p>
 
         <div className="lyrics-list">
           <Link href="/lyrics/eshgh-virangar">
@@ -217,7 +163,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* درباره من */}
       <section id="about" className="about-section">
         <h2>👩 درباره من</h2>
 
@@ -242,3 +187,4 @@ export default function Home() {
     </main>
   );
 }
+
