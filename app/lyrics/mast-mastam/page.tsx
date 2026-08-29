@@ -3,6 +3,19 @@ export default function MastMastamPage() {
     <main className="lyrics-page">
       <h1>مست مستم</h1>
 
+      <audio
+        controls
+        preload="metadata"
+        style={{
+          width: "100%",
+          maxWidth: "700px",
+          marginBottom: "35px",
+        }}
+      >
+        <source src="/mast-mastam.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
+
       <div className="lyrics-text">
         <p>
           مَستِ مَستَم، کن ساقیا پیمانه را لبریز کن<br />
