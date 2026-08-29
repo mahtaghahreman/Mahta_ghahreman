@@ -3,19 +3,18 @@ export default function EshghVirangarPage() {
     <main className="lyrics-page">
       <h1>عشق ویرانگر</h1>
 
-      <div style={{ marginBottom: "35px" }}>
-        <audio
-          controls
-          preload="metadata"
-          style={{
-            width: "100%",
-            maxWidth: "700px",
-          }}
-        >
-          <source src="/eshgh-virangar.mp3" type="audio/mpeg" />
-          مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
-        </audio>
-      </div>
+      <audio
+        controls
+        preload="metadata"
+        style={{
+          width: "100%",
+          maxWidth: "700px",
+          marginBottom: "35px",
+        }}
+      >
+        <source src="/eshgh-virangar.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
 
       <div className="lyrics-text">
         <p>
@@ -27,14 +26,20 @@ export default function EshghVirangarPage() {
 
         <p>
           می‌رسد روزی که حتی خنده‌های آشنا<br />
-          در میانِ جمع، چشم را گریان می‌کند<br />
+          در میانِ جمع، چشم را گریان می‌کند
+        </p>
+
+        <p>
           عشق اگر باشد، جهان در چشم عاشق دیدنی‌ست<br />
           لیک هجران، خانه را یک‌باره زندان می‌کند
         </p>
 
         <p>
           من به پای عشق، عمری از جوانی سوختم<br />
-          آتشِ خاموشِ دل، جان مرا سوزان می‌کند<br />
+          آتشِ خاموشِ دل، جان مرا سوزان می‌کند
+        </p>
+
+        <p>
           گفتم از یادش برآیم، دیدم این دل ساده است<br />
           هرچه پنهانش می کنم، باز دلم، طوفان می‌کند
         </p>
