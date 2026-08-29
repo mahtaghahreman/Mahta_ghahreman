@@ -84,9 +84,7 @@ export default function Home() {
 
           <p>شاعر و ترانه‌سرا</p>
 
-          <p>
-            هر ترانه، تکه‌ای از یک زندگی...
-          </p>
+          <p>هر ترانه، تکه‌ای از یک زندگی...</p>
 
           <p>
             شعرهایی از عشق، دلتنگی، احساس و لحظه‌هایی که در دل آدم‌ها
@@ -104,20 +102,15 @@ export default function Home() {
             <article className="music-card" key={song.title}>
               <h3>{song.title}</h3>
 
-              <p className="lyric-preview">
-                {song.lyric}
-              </p>
+              <p className="lyric-preview">{song.lyric}</p>
 
               <audio controls preload="none">
                 <source src={song.file} type="audio/mpeg" />
                 مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
               </audio>
 
-              <Link
-                href={song.lyricLink}
-                className="read-more"
-              >
-                📖  متن ترانه
+              <Link href={song.lyricLink} className="read-more">
+                📖 متن ترانه
               </Link>
             </article>
           ))}
@@ -133,11 +126,37 @@ export default function Home() {
         </p>
 
         <div className="lyrics-list">
-          {songs.map((song) => (
-            <Link href={song.lyricLink} key={song.title}>
-              {song.title}
-            </Link>
-          ))}
+          <Link href="/lyrics/eshgh-virangar">
+            عشق ویرانگر
+          </Link>
+
+          <Link href="/lyrics/meykhaneh">
+            میخانه
+          </Link>
+
+          <Link href="/lyrics/fasle-eshgh">
+            فصل عشق
+          </Link>
+
+          <Link href="/lyrics/baroon">
+            بارون
+          </Link>
+
+          <Link href="/lyrics/kash">
+            کاش
+          </Link>
+
+          <Link href="/lyrics/kaboos">
+            کابوس
+          </Link>
+
+          <Link href="/lyrics/mast-mastam">
+            مست مستم
+          </Link>
+
+          <Link href="/lyrics/vaght-e-masti">
+            وقت مستی
+          </Link>
         </div>
       </section>
 
