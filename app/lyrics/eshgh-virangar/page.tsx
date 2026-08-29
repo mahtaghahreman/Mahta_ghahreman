@@ -3,10 +3,19 @@ export default function EshghVirangarPage() {
     <main className="lyrics-page">
       <h1>عشق ویرانگر</h1>
 
-      <audio controls preload="metadata" className="lyrics-audio">
-        <source src="/eshgh-virangar.mp3" type="audio/mpeg" />
-        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
-      </audio>
+      <div style={{ marginBottom: "35px" }}>
+        <audio
+          controls
+          preload="metadata"
+          style={{
+            width: "100%",
+            maxWidth: "700px",
+          }}
+        >
+          <source src="/eshgh-virangar.mp3" type="audio/mpeg" />
+          مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+        </audio>
+      </div>
 
       <div className="lyrics-text">
         <p>
