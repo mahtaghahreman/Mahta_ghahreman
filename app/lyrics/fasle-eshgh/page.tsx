@@ -3,6 +3,19 @@ export default function FasleEshghPage() {
     <main className="lyrics-page">
       <h1>فصل عشق</h1>
 
+      <audio
+        controls
+        preload="metadata"
+        style={{
+          width: "100%",
+          maxWidth: "700px",
+          marginBottom: "35px",
+        }}
+      >
+        <source src="/fasle-eshgh.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
+
       <div className="lyrics-text">
         <p>
           آمد از پشتِ غبارِ خاطره<br />
