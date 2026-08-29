@@ -3,6 +3,11 @@ export default function EshghVirangarPage() {
     <main className="lyrics-page">
       <h1>عشق ویرانگر</h1>
 
+      <audio controls preload="metadata" className="lyrics-audio">
+        <source src="/eshgh-virangar.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
+
       <div className="lyrics-text">
         <p>
           هر دلی را روزگاری عشق ویران می‌کند<br />
