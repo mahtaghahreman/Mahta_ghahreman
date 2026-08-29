@@ -3,6 +3,19 @@ export default function KashPage() {
     <main className="lyrics-page">
       <h1>کاش</h1>
 
+      <audio
+        controls
+        preload="metadata"
+        style={{
+          width: "100%",
+          maxWidth: "700px",
+          marginBottom: "35px",
+        }}
+      >
+        <source src="/Kash.mp3" type="audio/mpeg" />
+        مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+      </audio>
+
       <div className="lyrics-text">
         <p>
           کاش همسفرِ راهم بودی<br />
@@ -46,7 +59,7 @@ export default function KashPage() {
 
         <p>
           امشبی را که دلم تنگ تو است<br />
-          لحظه ای نیز ، به یادم بودی
+          لحظه ای نیز، به یادم بودی
         </p>
       </div>
     </main>
