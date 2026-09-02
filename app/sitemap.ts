@@ -3,48 +3,45 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://mahta-ghahreman.vercel.app";
 
+  const lyrics = [
+    "baroon",
+    "bikaran",
+    "eshgh-virangar",
+    "fasle-eshgh",
+    "iran",
+    "jan-o-del",
+    "kaboos",
+    "kash",
+    "khatereh",
+    "kooche-gard",
+    "mast-mastam",
+    "meykhaneh",
+    "panjereh",
+    "shekveh",
+    "vaghti-residam",
+    "vaght-e-masti",
+  ];
+
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
     },
-
-    // اشعار
     {
-      url: `${baseUrl}/lyrics/eshgh-virangar`,
+      url: `${baseUrl}/music`,
       lastModified: new Date(),
     },
-    {
-      url: `${baseUrl}/lyrics/meykhaneh`,
+    ...lyrics.map((slug) => ({
+      url: `${baseUrl}/lyrics/${slug}`,
       lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/fasle-eshgh`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/baroon`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/kash`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/kaboos`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/mast-mastam`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/lyrics/vaght-e-masti`,
-      lastModified: new Date(),
-    },
+    })),
   ];
 }
