@@ -133,7 +133,6 @@ export default function Home() {
         <nav>
           <a href="#home">خانه</a>
           <a href="#music">آهنگ‌ها</a>
-          <a href="#lyrics">اشعار</a>
           <a href="#about">درباره من</a>
           <Link href="/contact">ارتباط با من</Link>
         </nav>
@@ -187,33 +186,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="lyrics" className="lyrics-section">
-        <h2>📝 اشعار</h2>
-
-        <p>مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان</p>
-
-        <div className="lyrics-list">
-          <Link href="/lyrics/eshgh-virangar">عشق ویرانگر</Link>
-          <Link href="/lyrics/meykhaneh">میخانه</Link>
-          <Link href="/lyrics/fasle-eshgh">فصل عشق</Link>
-          <Link href="/lyrics/baroon">بارون</Link>
-          <Link href="/lyrics/kash">کاش</Link>
-          <Link href="/lyrics/kaboos">کابوس</Link>
-          <Link href="/lyrics/mast-mastam">مست مستم</Link>
-          <Link href="/lyrics/vaght-e-masti">وقت مستی</Link>
-          <Link href="/lyrics/khodaei">خدایی</Link>
-          <Link href="/lyrics/mifahmi">می‌فهمی</Link>
-          <Link href="/lyrics/akharin-didar">آخرین دیدار</Link>
-          <Link href="/lyrics/sokoot-va-bi-sedayi">
-            سکوت و بی‌صدایی
-          </Link>
-        </div>
-      </section>
-
       <section id="about" className="about-section">
         <h2>👩 درباره من</h2>
 
-        <p>من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.</p>
+        <p>
+          من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.
+        </p>
 
         <p>
           در این وب‌سایت می‌توانید مجموعه‌ای از شعرها،
