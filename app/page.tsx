@@ -131,7 +131,7 @@ export default function Home() {
 useEffect(() => {
 const savedScroll = sessionStorage.getItem("musicScrollPosition");
 
-```
+
 if (savedScroll) {
   const position = Number(savedScroll);
 
@@ -155,7 +155,7 @@ window.addEventListener("scroll", saveScrollPosition);
 return () => {
   window.removeEventListener("scroll", saveScrollPosition);
 };
-```
+
 
 }, []);
 
@@ -168,7 +168,7 @@ String(window.scrollY)
 
 return ( <main> <header className="header"> <h1>مهتا قهرمان</h1>
 
-```
+
     <nav>
       <a href="#home">خانه</a>
       <a href="#music">آهنگ‌ها</a>
@@ -222,6 +222,14 @@ return ( <main> <header className="header"> <h1>مهتا قهرمان</h1>
             مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
           </audio>
 
+          <p>
+            <strong>ترانه‌سرا:</strong> مهتا قهرمان
+          </p>
+
+          <p>
+            <strong>اجرا و تولید موسیقی:</strong> با استفاده از هوش مصنوعی
+          </p>
+
           <Link
             href={song.lyricLink}
             className="read-more"
@@ -257,7 +265,7 @@ return ( <main> <header className="header"> <h1>مهتا قهرمان</h1>
     © 2026 Mahta Ghahreman
   </footer>
 </main>
-```
+
 
 );
 }
