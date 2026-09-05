@@ -37,6 +37,22 @@ export default function LyricsPage() {
         <Link href="/lyrics/shekveh">
           شکوه
         </Link>
+
+        <Link href="/lyrics/khodaei">
+          خدایی
+        </Link>
+
+        <Link href="/lyrics/mifahmi">
+          می‌فهمی
+        </Link>
+
+        <Link href="/lyrics/akharin-didar">
+          آخرین دیدار
+        </Link>
+
+        <Link href="/lyrics/sokoot-va-bi-sedayi">
+          سکوت و بی‌صدایی
+        </Link>
       </div>
     </main>
   );
