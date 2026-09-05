@@ -51,10 +51,76 @@ const songs = [
     lyricLink: "/lyrics/shekveh",
   },
   {
+    title: "عشق ویرانگر",
+    file: "/eshgh-virangar.mp3",
+    lyric: "متن کوتاه شعر عشق ویرانگر اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/eshgh-virangar",
+  },
+  {
+    title: "میخانه",
+    file: "/meykhaneh.mp3",
+    lyric: "متن کوتاه شعر میخانه اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/meykhaneh",
+  },
+  {
+    title: "فصل عشق",
+    file: "/fasle-eshgh.mp3",
+    lyric: "متن کوتاه شعر فصل عشق اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/fasle-eshgh",
+  },
+  {
+    title: "بارون",
+    file: "/baroon.mp3",
+    lyric: "متن کوتاه شعر بارون اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/baroon",
+  },
+  {
+    title: "کاش",
+    file: "/Kash.mp3",
+    lyric: "متن کوتاه شعر کاش اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/kash",
+  },
+  {
+    title: "کابوس",
+    file: "/kaboos.mp3",
+    lyric: "متن کوتاه شعر کابوس اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/kaboos",
+  },
+  {
+    title: "مست مستم",
+    file: "/mast-mastam.mp3",
+    lyric: "متن کوتاه شعر مست مستم اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/mast-mastam",
+  },
+  {
     title: "وقت مستی",
     file: "/vaght-e-masti.mp3",
     lyric: "متن کوتاه شعر وقت مستی اینجا قرار می‌گیرد...",
     lyricLink: "/lyrics/vaght-e-masti",
+  },
+  {
+    title: "خدایی",
+    file: "/khodaei.mp3",
+    lyric: "متن کوتاه شعر خدایی اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/khodaei",
+  },
+  {
+    title: "می‌فهمی",
+    file: "/mifahmi.mp3",
+    lyric: "متن کوتاه شعر می‌فهمی اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/mifahmi",
+  },
+  {
+    title: "آخرین دیدار",
+    file: "/akharin-didar.mp3",
+    lyric: "متن کوتاه شعر آخرین دیدار اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/akharin-didar",
+  },
+  {
+    title: "سکوت و بی‌صدایی",
+    file: "/sokoot-va-bi-sedayi.mp3",
+    lyric: "متن کوتاه شعر سکوت و بی‌صدایی اینجا قرار می‌گیرد...",
+    lyricLink: "/lyrics/sokoot-va-bi-sedayi",
   },
 ];
 
@@ -124,41 +190,22 @@ export default function Home() {
       <section id="lyrics" className="lyrics-section">
         <h2>📝 اشعار</h2>
 
-        <p>
-          مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان
-        </p>
+        <p>مجموعه‌ای از شعرها و ترانه‌های مهتا قهرمان</p>
 
         <div className="lyrics-list">
-          <Link href="/lyrics/eshgh-virangar">
-            عشق ویرانگر
-          </Link>
-
-          <Link href="/lyrics/meykhaneh">
-            میخانه
-          </Link>
-
-          <Link href="/lyrics/fasle-eshgh">
-            فصل عشق
-          </Link>
-
-          <Link href="/lyrics/baroon">
-            بارون
-          </Link>
-
-          <Link href="/lyrics/kash">
-            کاش
-          </Link>
-
-          <Link href="/lyrics/kaboos">
-            کابوس
-          </Link>
-
-          <Link href="/lyrics/mast-mastam">
-            مست مستم
-          </Link>
-
-          <Link href="/lyrics/vaght-e-masti">
-            وقت مستی
+          <Link href="/lyrics/eshgh-virangar">عشق ویرانگر</Link>
+          <Link href="/lyrics/meykhaneh">میخانه</Link>
+          <Link href="/lyrics/fasle-eshgh">فصل عشق</Link>
+          <Link href="/lyrics/baroon">بارون</Link>
+          <Link href="/lyrics/kash">کاش</Link>
+          <Link href="/lyrics/kaboos">کابوس</Link>
+          <Link href="/lyrics/mast-mastam">مست مستم</Link>
+          <Link href="/lyrics/vaght-e-masti">وقت مستی</Link>
+          <Link href="/lyrics/khodaei">خدایی</Link>
+          <Link href="/lyrics/mifahmi">می‌فهمی</Link>
+          <Link href="/lyrics/akharin-didar">آخرین دیدار</Link>
+          <Link href="/lyrics/sokoot-va-bi-sedayi">
+            سکوت و بی‌صدایی
           </Link>
         </div>
       </section>
@@ -166,9 +213,7 @@ export default function Home() {
       <section id="about" className="about-section">
         <h2>👩 درباره من</h2>
 
-        <p>
-          من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.
-        </p>
+        <p>من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.</p>
 
         <p>
           در این وب‌سایت می‌توانید مجموعه‌ای از شعرها،
@@ -187,4 +232,3 @@ export default function Home() {
     </main>
   );
 }
-
