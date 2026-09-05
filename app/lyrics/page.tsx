@@ -38,6 +38,38 @@ export default function LyricsPage() {
           شکوه
         </Link>
 
+        <Link href="/lyrics/eshgh-virangar">
+          عشق ویرانگر
+        </Link>
+
+        <Link href="/lyrics/meykhaneh">
+          میخانه
+        </Link>
+
+        <Link href="/lyrics/fasle-eshgh">
+          فصل عشق
+        </Link>
+
+        <Link href="/lyrics/baroon">
+          بارون
+        </Link>
+
+        <Link href="/lyrics/kash">
+          کاش
+        </Link>
+
+        <Link href="/lyrics/kaboos">
+          کابوس
+        </Link>
+
+        <Link href="/lyrics/mast-mastam">
+          مست مستم
+        </Link>
+
+        <Link href="/lyrics/vaght-e-masti">
+          وقت مستی
+        </Link>
+
         <Link href="/lyrics/khodaei">
           خدایی
         </Link>
