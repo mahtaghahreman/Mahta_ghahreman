@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
-const siteUrl = "https://mahta-ghahreman.vercel.app";
+const siteUrl = "https://www.mahtaghahreman.ir";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -83,7 +84,23 @@ export default function RootLayout({
         />
       </head>
 
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WRVNQHPHM9"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WRVNQHPHM9');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
