@@ -85,6 +85,18 @@ export default function LyricsPage() {
         <Link href="/lyrics/sokoot-va-bi-sedayi">
           سکوت و بی‌صدایی
         </Link>
+
+        <Link href="/lyrics/rokhe-deldar">
+          رخ دلدار
+        </Link>
+
+        <Link href="/lyrics/che-talkheh">
+          چه تلخه
+        </Link>
+
+        <Link href="/lyrics/forsat-e-didar">
+          فرصت دیدار
+        </Link>
       </div>
     </main>
   );
