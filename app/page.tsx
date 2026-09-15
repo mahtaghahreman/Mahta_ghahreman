@@ -105,6 +105,21 @@ const songs = [
     file: "/sokoot-va-bi-sedayi.mp3",
     lyricLink: "/lyrics/sokoot-va-bi-sedayi",
   },
+  {
+    title: "رخ دلدار",
+    file: "/rokhe-deldar.mp3",
+    lyricLink: "/lyrics/rokhe-deldar",
+  },
+  {
+    title: "چه تلخه",
+    file: "/che-talkheh.mp3",
+    lyricLink: "/lyrics/che-talkheh",
+  },
+  {
+    title: "فرصت دیدار",
+    file: "/forsat-e-didar.mp3",
+    lyricLink: "/lyrics/forsat-e-didar",
+  },
 ];
 
 export default function Home() {
