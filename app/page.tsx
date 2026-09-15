@@ -4,6 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
+declare global {
+  interface Window {
+    gtag?: (
+      command: string,
+      eventName: string,
+      params?: Record<string, unknown>
+    ) => void;
+  }
+}
+
 const songs = [
   {
     title: "خاطره",
@@ -158,6 +168,14 @@ export default function Home() {
     );
   };
 
+  const handleSongDownload = (songTitle: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "download_song", {
+        song_name: songTitle,
+      });
+    }
+  };
+
   return (
     <main>
       <header className="header">
@@ -220,6 +238,15 @@ export default function Home() {
                 <strong>اجرا و تولید موسیقی:</strong> با استفاده از هوش مصنوعی
               </p>
 
+              <a
+                href={song.file}
+                download
+                className="download-button"
+                onClick={() => handleSongDownload(song.title)}
+              >
+                ⬇️ دانلود آهنگ
+              </a>
+
               <Link
                 href={song.lyricLink}
                 className="read-more"
@@ -257,3 +284,4 @@ export default function Home() {
     </main>
   );
 }
+
