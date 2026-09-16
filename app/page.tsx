@@ -132,17 +132,19 @@ const songs = [
   },
 ];
 
-const handleSongDownload = (songTitle: string) => {
+const handleSongDownload = (songTitle: string, fileName: string) => {
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", "download_song", {
       song_name: songTitle,
+      file_name: fileName,
     });
   }
 };
 
 export default function Home() {
   useEffect(() => {
-    const savedPosition = sessionStorage.getItem("musicScrollPosition");
+    const savedPosition =
+      sessionStorage.getItem("musicScrollPosition");
 
     if (savedPosition) {
       const position = Number(savedPosition);
@@ -206,11 +208,17 @@ export default function Home() {
 
         <div className="songs-list">
           {songs.map((song) => (
-            <article key={song.title} className="song-card">
+            <article
+              key={song.title}
+              className="song-card"
+            >
               <h3>{song.title}</h3>
 
               <audio controls preload="none">
-                <source src={song.file} type="audio/mpeg" />
+                <source
+                  src={song.file}
+                  type="audio/mpeg"
+                />
                 مرورگر شما از پخش فایل صوتی پشتیبانی نمی‌کند.
               </audio>
 
@@ -238,7 +246,12 @@ export default function Home() {
                   href={song.file}
                   download
                   className="lyrics-button download-button"
-                  onClick={() => handleSongDownload(song.title)}
+                  onClick={() =>
+                    handleSongDownload(
+                      song.title,
+                      song.file
+                    )
+                  }
                   aria-label={`دانلود آهنگ ${song.title}`}
                 >
                   ⬇️ دانلود آهنگ
@@ -265,7 +278,8 @@ export default function Home() {
           </p>
 
           <p>
-            این سایت خانه‌ای برای شعرها، ترانه‌ها و موسیقی‌های من است.
+            این سایت خانه‌ای برای شعرها، ترانه‌ها و موسیقی‌های
+            من است.
           </p>
         </div>
       </section>
