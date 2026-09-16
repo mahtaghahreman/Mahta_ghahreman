@@ -164,21 +164,21 @@ export default function Home() {
   };
 
   return (
-    <main className="site-container">
-      <header className="site-header">
+    <main>
+      <header>
         <div className="header-inner">
           <Link href="/" className="site-logo">
             مهتا قهرمان
           </Link>
 
-          <nav className="main-nav">
+          <nav>
             <a href="#music">آهنگ‌ها</a>
             <a href="#about">درباره من</a>
           </nav>
         </div>
       </header>
 
-      <section className="hero-section">
+      <section className="hero">
         <div className="hero-content">
           <div className="hero-image">
             <Image
@@ -192,12 +192,8 @@ export default function Home() {
 
           <div className="hero-text">
             <h1>مهتا قهرمان</h1>
-            <p>
-              شاعر، ترانه‌سرا و عاشقِ واژه‌ها
-            </p>
-            <p>
-              جایی برای شعرها، ترانه‌ها و موسیقی‌های من
-            </p>
+            <p>شاعر، ترانه‌سرا و عاشق واژه‌ها</p>
+            <p>جایی برای شعرها، ترانه‌ها و موسیقی‌های من</p>
           </div>
         </div>
       </section>
@@ -205,23 +201,15 @@ export default function Home() {
       <section id="music" className="music-section">
         <div className="section-title">
           <h2>🎵 آهنگ‌ها</h2>
-          <p>
-            مجموعه‌ای از ترانه‌ها و آثار موسیقی من
-          </p>
+          <p>مجموعه‌ای از ترانه‌ها و آثار موسیقی من</p>
         </div>
 
         <div className="songs-list">
           {songs.map((song) => (
             <article key={song.title} className="song-card">
-              <div className="song-header">
-                <h3>{song.title}</h3>
-              </div>
+              <h3>{song.title}</h3>
 
-              <audio
-                controls
-                preload="none"
-                className="audio-player"
-              >
+              <audio controls preload="none">
                 <source src={song.file} type="audio/mpeg" />
                 مرورگر شما از پخش فایل صوتی پشتیبانی نمی‌کند.
               </audio>
@@ -232,7 +220,8 @@ export default function Home() {
                 </p>
 
                 <p>
-                  <strong>اجرا و تولید موسیقی:</strong> با استفاده از هوش مصنوعی
+                  <strong>اجرا و تولید موسیقی:</strong>{" "}
+                  با استفاده از هوش مصنوعی
                 </p>
               </div>
 
@@ -248,12 +237,11 @@ export default function Home() {
                 <a
                   href={song.file}
                   download
-                  className="download-button"
+                  className="lyrics-button download-button"
                   onClick={() => handleSongDownload(song.title)}
                   aria-label={`دانلود آهنگ ${song.title}`}
                 >
-                  <span>↓</span>
-                  دانلود آهنگ
+                  ⬇️ دانلود آهنگ
                 </a>
               </div>
             </article>
@@ -282,7 +270,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer">
+      <footer>
         <p>© مهتا قهرمان</p>
         <p>شعر، ترانه و موسیقی</p>
       </footer>
