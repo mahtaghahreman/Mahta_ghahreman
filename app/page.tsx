@@ -18,121 +18,124 @@ const songs = [
   {
     title: "خاطره",
     file: "/Khatereh.mp3",
-    lyrics: "/lyrics/khatereh",
+    lyricLink: "/lyrics/khatereh",
   },
   {
     title: "پنجره",
     file: "/Panjereh.mp3",
-    lyrics: "/lyrics/panjereh",
+    lyricLink: "/lyrics/panjereh",
   },
   {
     title: "وقتی رسیدم",
     file: "/When-resid.mp3",
-    lyrics: "/lyrics/vaghti-residam",
+    lyricLink: "/lyrics/vaghti-residam",
   },
   {
     title: "ایران",
     file: "/Iran.mp3",
-    lyrics: "/lyrics/iran",
+    lyricLink: "/lyrics/iran",
   },
   {
     title: "کوچه گرد",
     file: "/KoocheGard.mp3",
-    lyrics: "/lyrics/kooche-gard",
+    lyricLink: "/lyrics/kooche-gard",
   },
   {
     title: "بی کران",
     file: "/Bikaran.mp3",
-    lyrics: "/lyrics/bikaran",
+    lyricLink: "/lyrics/bikaran",
   },
   {
     title: "جان و دل",
     file: "/Jan-o-Del.mp3",
-    lyrics: "/lyrics/jan-o-del",
+    lyricLink: "/lyrics/jan-o-del",
   },
   {
     title: "شکوه",
     file: "/Shekveh.mp3",
-    lyrics: "/lyrics/shekveh",
+    lyricLink: "/lyrics/shekveh",
   },
   {
     title: "عشق ویرانگر",
     file: "/eshgh-virangar.mp3",
-    lyrics: "/lyrics/eshgh-virangar",
+    lyricLink: "/lyrics/eshgh-virangar",
   },
   {
     title: "میخانه",
     file: "/meykhaneh.mp3",
-    lyrics: "/lyrics/meykhaneh",
+    lyricLink: "/lyrics/meykhaneh",
   },
   {
     title: "فصل عشق",
     file: "/fasle-eshgh.mp3",
-    lyrics: "/lyrics/fasle-eshgh",
+    lyricLink: "/lyrics/fasle-eshgh",
   },
   {
     title: "بارون",
     file: "/baroon.mp3",
-    lyrics: "/lyrics/baroon",
+    lyricLink: "/lyrics/baroon",
   },
   {
     title: "کاش",
     file: "/Kash.mp3",
-    lyrics: "/lyrics/kash",
+    lyricLink: "/lyrics/kash",
   },
   {
     title: "کابوس",
     file: "/kaboos.mp3",
-    lyrics: "/lyrics/kaboos",
+    lyricLink: "/lyrics/kaboos",
   },
   {
     title: "مست مستم",
     file: "/mast-mastam.mp3",
-    lyrics: "/lyrics/mast-mastam",
+    lyricLink: "/lyrics/mast-mastam",
   },
   {
     title: "وقت مستی",
     file: "/vaght-e-masti.mp3",
-    lyrics: "/lyrics/vaght-e-masti",
+    lyricLink: "/lyrics/vaght-e-masti",
   },
   {
     title: "خدایی",
     file: "/khodaei.mp3",
-    lyrics: "/lyrics/khodaei",
+    lyricLink: "/lyrics/khodaei",
   },
   {
     title: "می‌فهمی",
     file: "/mifahmi.mp3",
-    lyrics: "/lyrics/mifahmi",
+    lyricLink: "/lyrics/mifahmi",
   },
   {
     title: "آخرین دیدار",
     file: "/akharin-didar.mp3",
-    lyrics: "/lyrics/akharin-didar",
+    lyricLink: "/lyrics/akharin-didar",
   },
   {
     title: "سکوت و بی‌صدایی",
     file: "/sokoot-va-bi-sedayi.mp3",
-    lyrics: "/lyrics/sokoot-va-bi-sedayi",
+    lyricLink: "/lyrics/sokoot-va-bi-sedayi",
   },
   {
     title: "رخ دلدار",
     file: "/rokhe-deldar.mp3",
-    lyrics: "/lyrics/rokhe-deldar",
+    lyricLink: "/lyrics/rokhe-deldar",
   },
   {
     title: "چه تلخه",
     file: "/che-talkheh.mp3",
-    lyrics: "/lyrics/che-talkheh",
+    lyricLink: "/lyrics/che-talkheh",
   },
   {
     title: "فرصت دیدار",
     file: "/forsat-e-didar.mp3",
-    lyrics: "/lyrics/forsat-e-didar",
+    lyricLink: "/lyrics/forsat-e-didar",
   },
 ];
 
-const handleSongDownload = (songTitle: string, fileName: string) => {
+const handleSongDownload = (
+  songTitle: string,
+  fileName: string
+) => {
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", "download_song", {
       song_name: songTitle,
@@ -143,11 +146,11 @@ const handleSongDownload = (songTitle: string, fileName: string) => {
 
 export default function Home() {
   useEffect(() => {
-    const savedPosition =
+    const savedScroll =
       sessionStorage.getItem("musicScrollPosition");
 
-    if (savedPosition) {
-      const position = Number(savedPosition);
+    if (savedScroll) {
+      const position = Number(savedScroll);
 
       setTimeout(() => {
         window.scrollTo({
@@ -156,6 +159,22 @@ export default function Home() {
         });
       }, 100);
     }
+
+    const saveScrollPosition = () => {
+      sessionStorage.setItem(
+        "musicScrollPosition",
+        String(window.scrollY)
+      );
+    };
+
+    window.addEventListener("scroll", saveScrollPosition);
+
+    return () => {
+      window.removeEventListener(
+        "scroll",
+        saveScrollPosition
+      );
+    };
   }, []);
 
   const handleLyricClick = () => {
@@ -167,50 +186,50 @@ export default function Home() {
 
   return (
     <main>
-      <header>
-        <div className="header-inner">
-          <Link href="/" className="site-logo">
-            مهتا قهرمان
-          </Link>
+      <header className="header">
+        <h1>مهتا قهرمان</h1>
 
-          <nav>
-            <a href="#music">آهنگ‌ها</a>
-            <a href="#about">درباره من</a>
-          </nav>
-        </div>
+        <nav>
+          <a href="#home">خانه</a>
+          <a href="#music">آهنگ‌ها</a>
+          <a href="#about">درباره من</a>
+          <Link href="/contact">ارتباط با من</Link>
+        </nav>
       </header>
 
-      <section className="hero">
-        <div className="hero-content">
-          <div className="hero-image">
-            <Image
-              src="/profile.jpg"
-              alt="مهتا قهرمان"
-              width={220}
-              height={220}
-              priority
-            />
-          </div>
+      <section id="home" className="hero">
+        <div className="hero-image">
+          <Image
+            src="/Mahta.jpg"
+            alt="مهتا قهرمان"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 1100px"
+          />
+        </div>
 
-          <div className="hero-text">
-            <h1>مهتا قهرمان</h1>
-            <p>شاعر، ترانه‌سرا و عاشق واژه‌ها</p>
-            <p>جایی برای شعرها، ترانه‌ها و موسیقی‌های من</p>
-          </div>
+        <div className="intro">
+          <h2>Mahta Ghahreman</h2>
+
+          <p>شاعر و ترانه‌سرا</p>
+
+          <p>هر ترانه، تکه‌ای از یک زندگی...</p>
+
+          <p>
+            شعرهایی از عشق، دلتنگی، احساس و لحظه‌هایی
+            که در دل آدم‌ها ماندگار می‌شوند.
+          </p>
         </div>
       </section>
 
       <section id="music" className="music-section">
-        <div className="section-title">
-          <h2>🎵 آهنگ‌ها</h2>
-          <p>مجموعه‌ای از ترانه‌ها و آثار موسیقی من</p>
-        </div>
+        <h2>🎵 آهنگ‌ها</h2>
 
-        <div className="songs-list">
+        <div className="music-list">
           {songs.map((song) => (
             <article
+              className="music-card"
               key={song.title}
-              className="song-card"
             >
               <h3>{song.title}</h3>
 
@@ -219,74 +238,65 @@ export default function Home() {
                   src={song.file}
                   type="audio/mpeg"
                 />
-                مرورگر شما از پخش فایل صوتی پشتیبانی نمی‌کند.
+                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
               </audio>
 
-              <div className="song-info">
-                <p>
-                  <strong>ترانه‌سرا:</strong> مهتا قهرمان
-                </p>
+              <p>
+                <strong>ترانه‌سرا:</strong> مهتا قهرمان
+              </p>
 
-                <p>
-                  <strong>اجرا و تولید موسیقی:</strong>{" "}
-                  با استفاده از هوش مصنوعی
-                </p>
-              </div>
+              <p>
+                <strong>اجرا و تولید موسیقی:</strong>{" "}
+                با استفاده از هوش مصنوعی
+              </p>
 
-              <div className="song-actions">
-                <Link
-                  href={song.lyrics}
-                  className="lyrics-button"
-                  onClick={handleLyricClick}
-                >
-                  📖 متن ترانه
-                </Link>
+              <Link
+                href={song.lyricLink}
+                className="read-more"
+                onClick={handleLyricClick}
+              >
+                📖 متن ترانه
+              </Link>
 
-                <a
-                  href={song.file}
-                  download
-                  className="lyrics-button download-button"
-                  onClick={() =>
-                    handleSongDownload(
-                      song.title,
-                      song.file
-                    )
-                  }
-                  aria-label={`دانلود آهنگ ${song.title}`}
-                >
-                  ⬇️ دانلود آهنگ
-                </a>
-              </div>
+              <a
+                href={song.file}
+                download
+                className="read-more"
+                onClick={() =>
+                  handleSongDownload(
+                    song.title,
+                    song.file
+                  )
+                }
+              >
+                ⬇️ دانلود آهنگ
+              </a>
             </article>
           ))}
         </div>
       </section>
 
       <section id="about" className="about-section">
-        <div className="section-title">
-          <h2>👩 درباره من</h2>
-        </div>
+        <h2>👩 درباره من</h2>
 
-        <div className="about-content">
-          <p>
-            من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.
-          </p>
+        <p>
+          من مهتا قهرمان هستم؛ شاعر و ترانه‌سرا.
+        </p>
 
-          <p>
-            شعر برای من راهی برای گفتن چیزهایی‌ست که گاهی
-            نمی‌شود با زبان معمولی بیانشان کرد.
-          </p>
+        <p>
+          در این وب‌سایت می‌توانید مجموعه‌ای از شعرها،
+          ترانه‌ها و آثار موسیقی من را دنبال کنید.
+        </p>
 
-          <p>
-            این سایت خانه‌ای برای شعرها، ترانه‌ها و موسیقی‌های
-            من است.
-          </p>
-        </div>
+        <p>
+          بخشی از آثار موسیقی این مجموعه با کمک فناوری
+          هوش مصنوعی به موسیقی تبدیل شده‌اند تا فضای
+          احساسی ترانه‌ها بهتر شنیده شود.
+        </p>
       </section>
 
       <footer>
-        <p>© مهتا قهرمان</p>
-        <p>شعر، ترانه و موسیقی</p>
+        © 2026 Mahta Ghahreman
       </footer>
     </main>
   );
