@@ -97,6 +97,14 @@ export default function LyricsPage() {
         <Link href="/lyrics/forsat-e-didar">
           فرصت دیدار
         </Link>
+
+        <Link href="/lyrics/baran">
+          باران
+        </Link>
+
+        <Link href="/lyrics/panaham-bash">
+          پناهم باش
+        </Link>
       </div>
     </main>
   );
