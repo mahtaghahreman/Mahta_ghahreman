@@ -130,6 +130,16 @@ const songs = [
     file: "/forsat-e-didar.mp3",
     lyricLink: "/lyrics/forsat-e-didar",
   },
+  {
+    title: "باران",
+    file: "/baran.mp3",
+    lyricLink: "/lyrics/baran",
+  },
+  {
+    title: "پناهم باش",
+    file: "/panaham-bash.mp3",
+    lyricLink: "/lyrics/panaham-bash",
+  },
 ];
 
 const handleSongDownload = (
