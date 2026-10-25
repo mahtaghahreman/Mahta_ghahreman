@@ -105,6 +105,10 @@ export default function LyricsPage() {
         <Link href="/lyrics/panaham-bash">
           پناهم باش
         </Link>
+
+        <Link href="/lyrics/darya">
+          دریا
+        </Link>
       </div>
     </main>
   );
