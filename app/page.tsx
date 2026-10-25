@@ -140,6 +140,11 @@ const songs = [
     file: "/panaham-bash.mp3",
     lyricLink: "/lyrics/panaham-bash",
   },
+  {
+    title: "دریا",
+    file: "/Darya.mp3",
+    lyricLink: "/lyrics/darya",
+  },
 ];
 
 const handleSongDownload = (
