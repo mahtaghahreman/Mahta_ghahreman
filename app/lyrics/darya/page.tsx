@@ -1,7 +1,7 @@
 export default function DaryaPage() {
 return ( <main className="lyrics-page"> <h1>دریا</h1>
 
-```
+
   <div className="lyrics-text">
     <p>
       بیا دریا، که با تو، حرف بسیار دارم
@@ -66,7 +66,6 @@ return ( <main className="lyrics-page"> <h1>دریا</h1>
     </p>
   </div>
 </main>
-```
 
 );
 }
