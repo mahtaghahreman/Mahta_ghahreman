@@ -1,3 +1,4 @@
+
 export default function MusicPage() {
   return (
     <main className="lyrics-page">
@@ -180,6 +181,24 @@ export default function MusicPage() {
           <p>اجرا و تولید موسیقی: با استفاده از هوش مصنوعی</p>
           <audio controls>
             <source src="/sokoot-va-bi-sedayi.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div className="music-card">
+          <h3>خاک وطن</h3>
+          <p>ترانه‌سرا: مهتا قهرمان</p>
+          <p>اجرا و تولید موسیقی: با استفاده از هوش مصنوعی</p>
+          <audio controls>
+            <source src="/Khak-e-Vatan.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div className="music-card">
+          <h3>فریاد بی‌پناهی</h3>
+          <p>ترانه‌سرا: مهتا قهرمان</p>
+          <p>اجرا و تولید موسیقی: با استفاده از هوش مصنوعی</p>
+          <audio controls>
+            <source src="/Faryad-e-Bipanahi.mp3" type="audio/mpeg" />
           </audio>
         </div>
 
