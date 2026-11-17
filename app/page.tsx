@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -144,6 +145,16 @@ const songs = [
     title: "دریا",
     file: "/Darya.mp3",
     lyricLink: "/lyrics/darya",
+  },
+  {
+    title: "خاک وطن",
+    file: "/Khak-e-Vatan.mp3",
+    lyricLink: "/lyrics/khak-e-vatan",
+  },
+  {
+    title: "فریاد بی‌پناهی",
+    file: "/Faryad-e-Bipanahi.mp3",
+    lyricLink: "/lyrics/faryad-e-bipanahi",
   },
 ];
 
