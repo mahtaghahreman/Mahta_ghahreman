@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function LyricsPage() {
@@ -108,6 +109,14 @@ export default function LyricsPage() {
 
         <Link href="/lyrics/darya">
           دریا
+        </Link>
+
+        <Link href="/lyrics/khak-e-vatan">
+          خاک وطن
+        </Link>
+
+        <Link href="/lyrics/faryad-e-bipanahi">
+          فریاد بی‌پناهی
         </Link>
       </div>
     </main>
